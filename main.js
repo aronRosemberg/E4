@@ -20,11 +20,11 @@ const miFetch = async (valor) => {
 };
 
 let obtenerAlturamts = (cm) => {
-    return Number(cm)*10;
+    return (Number(cm)/10);
  };
   
 let obtenerPesokg = (g) => {
-    return Number(g)*10;
+    return (Number(g)/10);
 };
 
 const transformarMayuscula = (palabra) =>{

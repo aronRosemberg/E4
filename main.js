@@ -46,7 +46,7 @@ let renderCards = (card) => {
 
 
 let typePokemon = (array) => {
-    const arrayNombres = array.map((elemento => elemento.type.name)).join(" ");
+    const arrayNombres = array.map((elemento => elemento.type.name)).join(" , ");
     return arrayNombres;
 }
 

@@ -38,7 +38,8 @@ let renderCards = (card) => {
   <h2 class='name'>${transformarMayuscula(card.name)}</h2>
   <span class='altura'>Altura: ${obtenerAlturamts(card.height)} metros</span>
   <span class='peso'>Peso: ${obtenerPesokg(card.weight)} kg</span>
-  <img  class='img' src="${ card.sprites.front_default}" alt=""></img>
+  <img  class='img' src="${ card.sprites.other.home.front_default
+  }" alt=""></img>
   <p class='tipos'>Tipos: ${typePokemon(card.types)}</p>
   `
 }

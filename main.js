@@ -15,7 +15,8 @@ const miFetch = async (valor) => {
 
   } catch (error) {
     // Aca va a ir el codigo en caso de que haya un error
-    alert(error);
+    alert(` ID no encontrado , por favor ingrese otro .`);
+    form.reset();
   }
 };
 
@@ -52,10 +53,14 @@ let typePokemon = (array) => {
 
 const obtenerPokemon =  async e => {
   e.preventDefault();
-
+  
   let value = input.value.trim();
-    
+  if(value.length == 0 ){
+    alert("por favor ingresa un ID");
+    return;
+  }
   const pokemon = await miFetch(value);
+  
 
   console.log(pokemon);
 
